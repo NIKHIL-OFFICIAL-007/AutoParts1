@@ -71,7 +71,7 @@ CREATE TABLE categories (
 CREATE TABLE brands (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    description TEXT,
+    description TEXT NOT NULL DEFAULT '',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
